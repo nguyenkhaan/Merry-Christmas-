@@ -29,7 +29,7 @@ const CongratulationCard = () => {
             Giáng sinh is coming!!
          </p>
          <p className="text-lg text-blue-700 tackle-light">
-            Chúc <span className="font-bold ">Vân Nhi</span> một mùa giáng sinh
+            Chúc <span className="font-bold ">bé yêu</span> một mùa giáng sinh
             an lành và ấm áp nhé
          </p>
          <div
@@ -86,7 +86,7 @@ const CongratulationCard = () => {
             />
          </div>
          <div className="flex w-full items-center justify-between">
-            <p className="md:text-lg text-base">Nguyen Kha An</p>
+            <p className="md:text-lg text-base">Chọn hộp quà nhé ^^</p>
             <button 
                 className="rounded-xl cursor-pointer animate-pulse duration-1200 px-5 py-3 shadow-lg text-white font-semibold text-base bg-yellow-700"
                 onClick={() => setToggleMusic(!toggleMusic)}

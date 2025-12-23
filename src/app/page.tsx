@@ -12,7 +12,7 @@ const App = () => {
    return (
       <div className=" w-full h-full items-center flex justify-center">
          <button
-            className={`w-60 h-17.5 ${buttonFont.className} relative start-button hover:transition-all duration-700 ease-in-out font-bold text-3xl px-5 py-4 tracking-wider rounded-2xl hover:bg-[#6E1513] cursor-pointer border  bg-[#5E0D0C] text-white shadow-[0_8px_20px_rgba(0,0,0,0.6)] border-[#452829]`}
+            className={`w-64 h-17.5 ${buttonFont.className} relative start-button hover:transition-all duration-700 ease-in-out font-bold text-3xl px-5 py-4 tracking-wider rounded-2xl hover:bg-[#6E1513] cursor-pointer border  bg-[#5E0D0C] text-white shadow-[0_8px_20px_rgba(0,0,0,0.6)] border-[#452829]`}
             onClick={handleClick}
          >
             <span className="transition-all duration-700 ease-in-out">Christmas Button</span>

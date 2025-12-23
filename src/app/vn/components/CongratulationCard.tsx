@@ -28,8 +28,8 @@ const CongratulationCard = () => {
          <p className="text-center w-full text-xl xl:text-2xl font-semibold">
             Giáng sinh is coming!!
          </p>
-         <p className="text-base text-blue-700">
-            Chúc <span className="font-bold">Vân Nhi</span> một mùa giáng sinh
+         <p className="text-lg text-blue-700 tackle-light">
+            Chúc <span className="font-bold ">Vân Nhi</span> một mùa giáng sinh
             an lành và ấm áp nhé
          </p>
          <div
@@ -64,16 +64,19 @@ const CongratulationCard = () => {
                   width={18}
                   src="../../../gift-2.webp"
                   style="lg:mx-[-10px] md:mx-[-8px] mx-[-6px] cursor-pointer"
+                  open={loichuc[1]}
                />
                <ImageCard
                   width={18}
                   src="../../../gift-3.webp"
                   style="lg:mx-[-10px] md:mx-[-8px] mx-[-6px] cursor-pointer"
+                  open={loichuc[2]}
                />
                <ImageCard
                   width={18}
                   src="../../../gift-4.webp"
                   style="lg:mx-[-10px] md:mx-[-8px] mx-[-6px] cursor-pointer"
+                  open={loichuc[3]}
                />
             </div>
             <ImageCard

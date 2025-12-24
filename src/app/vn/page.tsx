@@ -8,6 +8,9 @@ const CongratulationCard = dynamic(
 
 const Congratulation = () => {
    const [showFirework, setShowFirework] = useState(false);
+   useEffect(() => {
+      alert('Nhấn nút ở dưới bật nhạc lên và mở quà theo thứ tự nhan 💙')
+   } , [])
    return (
       <>
          <div className="w-full h-full items-center justify-center flex ">

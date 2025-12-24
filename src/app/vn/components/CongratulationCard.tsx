@@ -3,7 +3,7 @@ import { ActionDispatch, useEffect } from "react";
 import ImageCard from "./ImageCard";
 import { useState } from "react";
 import loichuc from "@/src/service/loichuc";
-type CongraProps = {
+type CongraProps = { 
    fireWork: boolean;
    setFirework: React.Dispatch<React.SetStateAction<boolean>>;
 };

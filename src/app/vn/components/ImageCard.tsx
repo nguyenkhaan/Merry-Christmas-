@@ -30,6 +30,7 @@ const ImageCard = ({ width = 20, open, src , style , presentNumber }: ImageCardP
       //neu mo that thi tien hanh Them du lieu tren thanh url 
       const params = new URLSearchParams(seachParams.toString())  
       if (presentNumber) params.set('gift' , presentNumber.toString()) //presentNumber   
+      
       router.push(`?${params.toString()}`);
       setData([desc , img]) // Dat lai gia tri 
       setModal(true) //Bat Modal len 

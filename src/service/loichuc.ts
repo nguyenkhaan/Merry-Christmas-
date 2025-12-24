@@ -16,7 +16,7 @@ const loichuc = [
   },
   {
  
-    desc: "Và cuối cùng… cô gái xinh nhất đêm Giáng sinh đang nhìn vào màn hình này nè. Cười lên nữa là xinh xỉu luôn nè. Hy vọng lời chúc nhỏ này có thể khiến bạn vui hơn một chút trong mùa Noel này. Chúc bạn luôn đáng yêu, rạng rỡ và tỏa sáng theo cách riêng của mình. Bye, bye 🎄😊",
+    desc: "Và cuối cùng… cô gái xinh nhất đêm Giáng sinh đang nhìn vào màn hình này nè. Cười lên nữa là xinh xỉu luôn. Hy vọng lời chúc nhỏ này có thể khiến bạn vui hơn một chút trong mùa Noel. Chúc bạn luôn đáng yêu, rạng rỡ và tỏa sáng theo cách riêng của mình. Bye, bye 🎄😊",
     img: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGZuZzNmY3VzdzBnZjBldTFyZW1rZXJmOXFhYnMzZGtvZDYwd3h6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1wqK5Bf1ten1KTUV8W/giphy.gif"
   }
 ]

@@ -6,18 +6,18 @@ const loichuc = [
   },
   {
  
-    desc: "Giáng sinh không chỉ là dịp lễ, mà còn là lúc để tạm gác lại những lo toan và mệt mỏi thường ngày. Mong rằng bạn sẽ có những khoảnh khắc thật yên bình bên gia đình, bạn bè và cả chính bản thân mình. Hãy cho phép mình được nghỉ ngơi, được cười nhiều hơn và tận hưởng những điều giản dị nhưng ấm áp nhé. Chúc bạn có một mùa Noel thật nhẹ nhàng và đáng nhớ ✨",
-    img: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGZuZzNmY3VzdzBnZjBldTFyZW1rZXJmOXFhYnMzZGtvZDYwd3h6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1wqK5Bf1ten1KTUV8W/giphy.gif"
+    desc: "Giáng sinh không chỉ là dịp lễ, mà còn là lúc để tạm gác lại những lo toan và mệt mỏi thường ngày. Mong rằng bạn sẽ có những khoảnh khắc thật yên bình bên gia đình, bạn bè và cả chính bản thân mình. Hãy cho phép mình được nghỉ ngơi, được cười nhiều hơn và tận hưởng những điều giản dị nhưng ấm áp nhé. Chúc Vân Nhi có một mùa Noel thật nhẹ nhàng và đáng nhớ ✨",
+    img: "https://media.giphy.com/media/9AM113fwR2cJyXFuA1/giphy.gif"
   },
   {
  
-    desc: "Hộp quà thứ ba là một lời chúc dành cho sự cố gắng của bạn. Mong rằng bạn sẽ luôn vững vàng, tự tin và không bỏ cuộc trước những thử thách phía trước. Tất cả những nỗ lực thầm lặng của bạn đều xứng đáng được ghi nhận và đền đáp. Nếu có thi cử hay mục tiêu nào đang chờ đợi, chúc bạn thật bình tĩnh, làm hết khả năng và đạt được kết quả mà mình mong muốn. Tin là bạn làm được 💪",
-    img: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGZuZzNmY3VzdzBnZjBldTFyZW1rZXJmOXFhYnMzZGtvZDYwd3h6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1wqK5Bf1ten1KTUV8W/giphy.gif"
+    desc: "Hộp quà thứ ba là một lời chúc dành cho dũng khí. Mong rằng bạn sẽ luôn vững vàng, tự tin và không bỏ cuộc trước những thử thách phía trước. Tất cả những nỗ lực thầm lặng của bạn đều xứng đáng được ghi nhận và đền đáp. Nếu có thi cử hay mục tiêu nào đang chờ đợi, chúc bạn thật bình tĩnh, làm hết khả năng và đạt được kết quả mà mình mong muốn. Tin là bạn làm được 💪",
+    img: "https://media.giphy.com/media/l0Nwv55UMfEVf1y92/giphy.gif"
   },
   {
  
-    desc: "Và cuối cùng… cô gái xinh nhất đêm Giáng sinh đang nhìn vào màn hình này nè. Cười lên nữa là xinh xỉu luôn. Hy vọng lời chúc nhỏ này có thể khiến bạn vui hơn một chút trong mùa Noel. Chúc bạn luôn đáng yêu, rạng rỡ và tỏa sáng theo cách riêng của mình. Bye, bye 🎄😊",
-    img: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGZuZzNmY3VzdzBnZjBldTFyZW1rZXJmOXFhYnMzZGtvZDYwd3h6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1wqK5Bf1ten1KTUV8W/giphy.gif"
+    desc: "Và cuối cùng… cô gái xinh nhất đêm Giáng sinh đang nhìn vào màn hình này nè. Cười lên nữa là xinh xỉu luôn. Hi vọng lời chúc nhỏi này có thể khiến bạn vui hơn một chút trong mùa Noel. Chúc bạn luôn đáng yêu, rạng rỡ và tỏa sáng theo cách riêng của mình. Bye, bye 🎄😊. Now ShowTime! ",
+    img: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHYwbmg1aXBvcmxvdHZiY24wY3dnZWFhNHZ2bndzY281ODJjaGRjcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cOhyQKeb5bBPlhGE2F/giphy.gif"
   }
 ]
 

@@ -26,7 +26,7 @@ const Modal = ({
   if (!showModal && !showFirework) return null;
 
   const handleClick = () => {
-    if (searchParams.get("gift") === "4") {
+    if (searchParams.get("gift") == "4") {
       setShowModal(false);   // đóng modal
       
       //Tien hanh tat het tat ca cac nhac khac 
@@ -44,7 +44,7 @@ const Modal = ({
     else 
     {
       setShowModal(false) 
-      SoundServices.stopAllBackground() 
+      // SoundServices.stopAllBackground() 
     }
   };
 

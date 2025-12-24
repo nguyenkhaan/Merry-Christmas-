@@ -17,7 +17,7 @@ class SoundService {
       if (key !== name) sound.stop();
     });
 
-    this.backgroundSounds.get(name)?.play();
+    this.backgroundSounds.get(name)?.play();  //
     this.currentBg = name;
   }
 

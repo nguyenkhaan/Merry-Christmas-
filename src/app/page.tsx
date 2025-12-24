@@ -15,7 +15,7 @@ const App = () => {
             className={`w-64 h-17.5 ${buttonFont.className} relative start-button hover:transition-all duration-700 ease-in-out font-bold text-3xl px-5 py-4 tracking-wider rounded-2xl hover:bg-[#6E1513] cursor-pointer border  bg-[#5E0D0C] text-white shadow-[0_8px_20px_rgba(0,0,0,0.6)] border-[#452829]`}
             onClick={handleClick}
          >
-            <span className="transition-all duration-700 ease-in-out">Christmas Button</span>
+            <span className="transition-all duration-700 ease-in-out">Christmas Click</span>
             <div className="absolute w-full flex items-start justify-between top-0 -translate-y-1/2 left-0 h-10">
               <img src={"../../snow-cap-1.png"} className="w-[32%] -ml-2" /> 
               <img src={"../../snow-cap-2.png"} className="w-[32%] -mt-1" /> 

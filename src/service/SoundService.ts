@@ -22,6 +22,9 @@ class SoundService {
   }
 
   stopAllBackground() {
+    const audio = document.querySelector('.background-music') as HTMLAudioElement 
+    if (audio) 
+        audio.pause() 
     this.backgroundSounds.forEach(sound => sound.stop());
     this.currentBg = undefined;
   }

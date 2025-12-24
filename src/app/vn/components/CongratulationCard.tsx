@@ -4,25 +4,21 @@ import ImageCard from "./ImageCard";
 import { useState } from "react";
 import loichuc from "@/src/service/loichuc";
 import useSound from "use-sound";
-import SoundService from "@/src/service/SoundService";
 type CongraProps = {
    fireWork: boolean;
    setFirework: React.Dispatch<React.SetStateAction<boolean>>;
 };
 const CongratulationCard = ({ fireWork, setFirework }: CongraProps) => {
    const [toggleMusic, setToggleMusic] = useState(false);
-   const [play , {stop}] = useSound('/sounds/background-music.mp3' , {
-      volume: 0.65, 
-      preload: true 
-   })
+
    useEffect(() => {
-      SoundService.registerBackground('bg-1' , {play , stop})  //Dang ki nhac nen 
-   } , [play , stop])
-   useEffect(() => {
-      if (toggleMusic)
-         SoundService.playBackground('bg-1') 
-      else 
-         SoundService.stopBackgroundMusic('bg-1') 
+      const audio = document.querySelector(
+         ".background-music"
+      ) as HTMLAudioElement;
+      if (audio && toggleMusic) {
+         audio.volume = 0.7;
+         audio.play();
+      } else audio.pause();
    }, [toggleMusic]);
    return (
       <div className="w-165 h-140 lg:h-167.5 bg-(--color-card) rounded-xl flex flex-col gap-3 md:gap-4 items-center justify-between opacity-95 px-7 xl:px-6 py-8 relative">

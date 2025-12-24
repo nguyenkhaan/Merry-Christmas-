@@ -1,6 +1,11 @@
 "use client"
-import CongratulationCard from "./components/CongratulationCard";
+import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
+const CongratulationCard = dynamic(
+  () => import("./components/CongratulationCard"),
+  { ssr: false }
+);
+
 const Congratulation = () => {
    const [showFirework, setShowFirework] = useState(false);
    return (

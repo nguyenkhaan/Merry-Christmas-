@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import CongratulationCard from "./components/CongratulationCard";
 import { useState, useEffect } from "react";
 const Congratulation = () => {

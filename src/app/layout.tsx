@@ -38,7 +38,7 @@ export default function RootLayout({
             >
                {children}
             </div>
-            <audio loop className="invisible w-0 h-0 background-music" src={"../../sounds/background-music.mp3"}></audio>
+            <audio loop className="invisible w-0 h-0 background-music" src={"/sounds/background-music.mp3"} preload="auto"></audio>
          </body>
       </html>
    );

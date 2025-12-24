@@ -1,19 +1,28 @@
 "use client";
-import { useEffect } from "react";
+import { ActionDispatch, useEffect } from "react";
 import ImageCard from "./ImageCard";
 import { useState } from "react";
 import loichuc from "@/src/service/loichuc";
-const CongratulationCard = () => {
-   const [toggleMusic, setToggleMusic] = useState(false); 
+import useSound from "use-sound";
+import SoundService from "@/src/service/SoundService";
+type CongraProps = {
+   fireWork: boolean;
+   setFirework: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const CongratulationCard = ({ fireWork, setFirework }: CongraProps) => {
+   const [toggleMusic, setToggleMusic] = useState(false);
+   const [play , {stop}] = useSound('/sounds/background-music.mp3' , {
+      volume: 0.65, 
+      preload: true 
+   })
    useEffect(() => {
-      const audio = document.querySelector(
-         ".background-music"
-      ) as HTMLAudioElement;
-      if (audio && toggleMusic) {
-         audio.volume = 0.5; 
-         audio.play();
-      }
-      else audio.pause() 
+      SoundService.registerBackground('bg-1' , {play , stop})  //Dang ki nhac nen 
+   } , [play , stop])
+   useEffect(() => {
+      if (toggleMusic)
+         SoundService.playBackground('bg-1') 
+      else 
+         SoundService.stopBackgroundMusic('bg-1') 
    }, [toggleMusic]);
    return (
       <div className="w-165 h-140 lg:h-167.5 bg-(--color-card) rounded-xl flex flex-col gap-3 md:gap-4 items-center justify-between opacity-95 px-7 xl:px-6 py-8 relative">
@@ -28,8 +37,8 @@ const CongratulationCard = () => {
          <p className="text-center w-full text-xl xl:text-2xl font-semibold">
             Giáng sinh is coming!!
          </p>
-         <p className="text-lg text-blue-700 tackle-light">
-            Chúc <span className="font-bold ">bé yêu</span> một mùa giáng sinh
+         <p className="text-base md:text-lg text-blue-700 tackle-light text-center">
+            Chúc <span className="font-bold ">Vân Nhi</span> một mùa giáng sinh
             an lành và ấm áp nhé
          </p>
          <div
@@ -59,44 +68,50 @@ const CongratulationCard = () => {
                   src="../../../gift-1.webp"
                   style="lg:mx-[-10px] md:mx-[-8px] mx-[-6px] cursor-pointer"
                   open={loichuc[0]}
+                  presentNumber={1}
                />
                <ImageCard
                   width={18}
                   src="../../../gift-2.webp"
                   style="lg:mx-[-10px] md:mx-[-8px] mx-[-6px] cursor-pointer"
                   open={loichuc[1]}
+                  presentNumber={2}
                />
                <ImageCard
                   width={18}
                   src="../../../gift-3.webp"
                   style="lg:mx-[-10px] md:mx-[-8px] mx-[-6px] cursor-pointer"
                   open={loichuc[2]}
+                  presentNumber={3}
                />
                <ImageCard
                   width={18}
                   src="../../../gift-4.webp"
                   style="lg:mx-[-10px] md:mx-[-8px] mx-[-6px] cursor-pointer"
                   open={loichuc[3]}
+                  presentNumber={4}
+                  
                />
             </div>
+
             <ImageCard
                width={36}
                src="../../../snowman.gif"
                style="right-2 absolute bottom-4"
             />
+               
          </div>
          <div className="flex w-full items-center justify-between">
-            <p className="md:text-lg text-base">Chọn hộp quà nhé ^^</p>
-            <button 
-                className="rounded-xl cursor-pointer animate-pulse duration-1200 px-5 py-3 shadow-lg text-white font-semibold text-base bg-yellow-700"
-                onClick={() => setToggleMusic(!toggleMusic)}
+            <p className="md:text-lg text-base animate-bounce">
+               Mở quà từ trái sang phải nhé :))
+            </p>
+            <button
+               className="rounded-xl cursor-pointer animate-pulse duration-1200 px-5 py-3 shadow-lg text-white font-semibold text-base bg-yellow-700"
+               onClick={() => setToggleMusic(!toggleMusic)}
             >
                {toggleMusic ? "Off Music" : "On Music"}
-               
             </button>
-            
          </div>
-    
       </div>
    );
 };

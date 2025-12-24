@@ -1,10 +1,17 @@
-import CongratulationCard from "./components/CongratulationCard"
-const Congratulation = () => 
-{
-    return (
-        <div className="w-full h-full items-center justify-center flex">
-            <CongratulationCard /> 
-        </div>
-    )
-}
-export default Congratulation
+"use client";
+import CongratulationCard from "./components/CongratulationCard";
+import { useState, useEffect } from "react";
+const Congratulation = () => {
+   const [showFirework, setShowFirework] = useState(false);
+   return (
+      <>
+         <div className="w-full h-full items-center justify-center flex ">
+            <CongratulationCard
+               fireWork={showFirework}
+               setFirework={setShowFirework}
+            />
+         </div>
+      </>
+   );
+};
+export default Congratulation;
